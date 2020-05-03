@@ -15,6 +15,7 @@ require './validity'
 extend Validity
 #An Array to hold user arguments
 widgets=[]
+flines=[]
 #If you are  going to use sytem commands and list the out put, use puts + backticks (``), or system("cmd")
 puts `cat ~/.config/kglobalshortcutsrc | grep 'Activate Application Launcher'`
 #Asking the user for inputs
@@ -30,4 +31,7 @@ until option== 'q' #Until the user decides to quit
      end
 option=gets.downcase.chomp #get user input,.
 end
-puts "#{widgets}"
+
+fileLines=`cat ~/.config/plasma-org.kde.plasma.desktop-appletsrc | grep #{widgets[0]}` 
+flines.push(fileLines.split(/\n+/)) #Splits the output from console accoding to the newline
+puts "#{flines}"
