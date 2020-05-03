@@ -19,9 +19,9 @@ flines=[]
 #If you are  going to use sytem commands and list the out put, use puts + backticks (``), or system("cmd")
 puts `cat ~/.config/kglobalshortcutsrc | grep 'Activate Application Launcher'`
 #Asking the user for inputs
-puts "What are the widget numbers that you would like to remove? (Enter q to quit)\n"
+puts "What are the widget numbers that you would like to remove? (Enter q to quit or c to continue)\n"
 option=gets.downcase.chomp#Get the user input and downcase it if possible, I'm not converting to int here because we need to check if the user input is to quit or an int
-until option== 'q' #Until the user decides to quit
+until option== 'q' || option=='c' #Until the user decides to quit
      unless isintnum?(option) #Check if the user input is a num
           puts "Input is not an integer number"
      else
@@ -31,7 +31,8 @@ until option== 'q' #Until the user decides to quit
      end
 option=gets.downcase.chomp #get user input,.
 end
-
+exit if quit?(option)
+exit if emptyarray?(widgets)
 fileLines=`cat ~/.config/plasma-org.kde.plasma.desktop-appletsrc | grep #{widgets[0]}` 
-flines.push(fileLines.split(/\n+/)) #Splits the output from console accoding to the newline
-puts "#{flines}"
+flines.push(fileLines.split(/\n+/)) #Splits the output from console accoding to the newline and puts in into a 2D Array
+puts "#{flines[0][1]}"

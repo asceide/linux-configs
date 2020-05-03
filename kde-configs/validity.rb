@@ -9,5 +9,24 @@ module Validity
         userInput= userInput.to_s unless userInput.is_a? String
         /\A[+-]?\d+(\.\d+)?\z/.match userInput #The only difference here is +(\.\d+). the \.\ is checking if there is zero or one of a period,. Put together its checking if there is zero or one of a dot followed by one or more digits
     end
+
+    def quit?(userInput)
+        if userInput=='q'
+            puts "Exiting"
+            return true
+        else
+            return false
+        end
+    end
+
+    def emptyarray?(userInput)
+        if userInput.empty?
+            puts "There were no inputs, exiting!"
+            return true
+        else
+            return false
+        end
+    end
+
 end
 
