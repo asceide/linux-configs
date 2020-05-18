@@ -1,4 +1,4 @@
-.. role::con(code)
+.. role:: con(code)
   :language: bash
   
 ====================================
@@ -36,6 +36,7 @@ This is probably the easiest way to use git since at most you have to input your
    * If you want a key with its own unique name, :con:`cd ~/.ssh`, run con:`ssh-keygen -t rsa -b 4096 -C "email@example.com"`, and give it it's own unique name, like asceide_rsa.
 
 3. After the private/public key pair has been generated, you want to associate the key with your github account. Make sure that you have xclip or any other similar program installed
+   
    a. Go to github.com and login.
    b. Go to your settings and select "SSH and GPG keys"
    c. Click on "New SSH key"
