@@ -2,17 +2,17 @@
 ZSH Installation and Configuration
 ====================================
 
-.. role:: console(code)
+.. role:: shell(code)
    :language: console
 
 Installing ZSH
 ================
 Installing ZSH is simple enough, if it is not already installed.
 	
-1. Check to see if the distro supports zsh by :console:`cat /etc/shells` . If it does, ``bin/zsh`` should be listed.
-2. Install zsh via package manager. For example, openSUSE would use :console:`sudo zypper in zsh` .
+1. Check to see if the distro supports zsh by :shell:`cat /etc/shells` . If it does, ``bin/zsh`` should be listed.
+2. Install zsh via package manager. For example, openSUSE would use :shell:`sudo zypper in zsh` .
 3. Follow the wizard.
-4. Once finished, change the default shell to zsh via :cosole:`chsh -s /bin/zsh` . Restart terminal/computer and confirm that it has changed with :console:`echo $SHELL`
+4. Once finished, change the default shell to zsh via :shell:`chsh -s /bin/zsh` . Restart terminal/computer and confirm that it has changed with :shell:`echo $SHELL`
 
 Afterwards, we are going to make using zsh a bit prettier.
 
