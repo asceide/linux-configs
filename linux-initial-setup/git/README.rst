@@ -58,5 +58,5 @@ Save that to a file called config in the ~/.ssh directory. You can change the ho
 
 5. Test out your connection by using :con:`ssh -T git@github.com`. You should successfully authenticate. If you cannot, check your config file once again.
    
-   * *If you're getting a Bad Owner/Permissions error, use :con:`chmod 600 ~/.ssh/config`*
+   * *If you're getting a Bad Owner/Permissions error, use* :con:`chmod 600 ~/.ssh/config`
     
