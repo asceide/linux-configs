@@ -1,19 +1,19 @@
 =================
-Linux Initial Setup
+**Linux Initial Setup**
 =================
 
 --------
-Installing Programmings and adjusting configurations
+*Installing Programmings and adjusting configurations*
 --------
 
-What you have to do
+``What you have to do``
 =======
 
-
-What do you have to do
 1. ZSH
-   - (If needed) Download and Install ZSH
-   - Switch shell to zsh using `chsh -s /bin/zsh`
+
+   * (If needed) Download and Install ZSH
+   * Switch shell to zsh using code-block:: chsh -s /bin/zsh
+
 2. git
    - (If needed) Download and Install git
    - See specific folder for more information
