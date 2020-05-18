@@ -2,7 +2,7 @@
 ZSH Installation and Configuration
 ====================================
 
-.. role:: shell(code)
+.. role:: shell(sourcecode)
    :language: console
 
 Installing ZSH
