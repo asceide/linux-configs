@@ -8,13 +8,13 @@
 
 **ZSH**
 ========================   
-* *Check to see if zsh is supported via :code:`cat /etc/shells`
-* (If needed) Install ZSH via package manager
+* *Check to see if zsh is supported via :code:`cat /etc/shells`*
+* *(If needed)* Install ZSH via package manager
 * Switch shell to zsh using :code:`chsh -s /bin/zsh`
 
 **git**
 =========
-* (If needed) Install git via package manager
+* *(If needed)* Install git via package manager
 * See specific folder for more information
    
 **Firefox Developer Edition**
