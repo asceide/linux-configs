@@ -1,6 +1,5 @@
 .. role:: con(code)
   :language: bash
-  :class: highlight
 
 
 ====================================
