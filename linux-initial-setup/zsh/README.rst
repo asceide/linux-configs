@@ -2,12 +2,13 @@
 ZSH Installation and Configuration
 ====================================
 
-.. role:: sh(sourcecode)
-   :language: console
 
 Installing ZSH
 ================
 Installing ZSH is simple enough, if it is not already installed.
+
+.. role:: sh(code)
+	:language: console
 	
 1. Check to see if the distro supports zsh by :sh:`cat /etc/shells` . If it does, ``bin/zsh`` should be listed.
 2. Install zsh via package manager. For example, openSUSE would use :sh:`sudo zypper in zsh` .
