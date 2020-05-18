@@ -54,5 +54,5 @@ This is probably the easiest way to use git since at most you have to input your
 	 IdentityFile ~/.ssh/id_rsa
 
 	 
-Save that to a file called config in the ~/.ssh directory. You can change the host name, for example from git@github.com to git@github.com-asceide, or anything else, if you want.
+  Save that to a file called config in the ~/.ssh directory. You can change the host name, for example from git@github.com to git@github.com-asceide, or anything else, if you want.
     
