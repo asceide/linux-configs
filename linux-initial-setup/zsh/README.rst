@@ -23,7 +23,7 @@ Some themes in Oh My Zsh use powerline symbols, so we may want to install this.
 
 Easiest way to get it is through the package manager. Using SolusOS as an example, get powerline fonts with:
 
-.. code-block::
+.. sourcecode:: console
 
 	sudo eopkg it powerline-fonts
 	
