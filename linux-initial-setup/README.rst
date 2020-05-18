@@ -12,7 +12,9 @@
 1. ZSH
 
    * (If needed) Download and Install ZSH
-   * Switch shell to zsh using code-block:: chsh -s /bin/zsh
+   * Switch shell to zsh using 
+..   sourcecode:: 
+	chsh -s /bin/zsh
 
 2. git
    - (If needed) Download and Install git
