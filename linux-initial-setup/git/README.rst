@@ -47,12 +47,16 @@ This is probably the easiest way to use git since at most you have to input your
 
 .. sourcecode:: vim
 
-	host git@github.com
+	host github.com
 	 User git
 	 HostName github.com
 	 AddKeysToAgent yes
 	 IdentityFile ~/.ssh/id_rsa
 
 	 
-  Save that to a file called config in the ~/.ssh directory. You can change the host name, for example from git@github.com to git@github.com-asceide, or anything else, if you want.
+Save that to a file called config in the ~/.ssh directory. You can change the host name, for example from git@github.com to git@github.com-asceide, or anything else, if you want.
+
+5. Test out your connection by using :con:`ssh -T git@github.com`. You should successfully authenticate. If you cannot, check your config file once again.
+   
+   * *If you're getting a Bad Owner/Permissions error, use :con:`chmod 600 ~/.ssh/config`*
     
