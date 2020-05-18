@@ -1,4 +1,5 @@
-.. role:: console(code)
+.. role:: con(code)
+  :language: console
 
 
 ====================================
@@ -10,10 +11,10 @@ Installing ZSH
 ================
 Installing ZSH is simple enough, if it is not already installed.
 	
-1. Check to see if the distro supports zsh by :console:`sudo cat /etc/shells` . If it does, ``bin/zsh`` should be listed.
-2. Install zsh via package manager. For example, openSUSE would use :sh:`sudo zypper in zsh` .
+1. Check to see if the distro supports zsh by :con:`sudo cat /etc/shells` . If it does, ``bin/zsh`` should be listed.
+2. Install zsh via package manager. For example, openSUSE would use :con:`sudo zypper in zsh` .
 3. Follow the wizard.
-4. Once finished, change the default shell to zsh via :sh:`chsh -s /bin/zsh` . Restart terminal/computer and confirm that it has changed with :sh:`echo $SHELL`
+4. Once finished, change the default shell to zsh via :con:`chsh -s /bin/zsh` . Restart terminal/computer and confirm that it has changed with :con:`echo $SHELL`
 
 Afterwards, we are going to make using zsh a bit prettier.
 
