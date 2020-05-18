@@ -43,9 +43,10 @@ This is probably the easiest way to use git since at most you have to input your
    d. In the terminal, copy the contents of id_rsa.pub with :con:`cat ~/.ssh/id_rsa.pub | xclip -selection clip`.
    e. Paste whatever was copied in the clipboard to the box in github and save.
 
-4. Now what you want to do is create a config file to use to connect via ssh. In this file you shall place:
+4. Now what you want to do is create a config file to use to connect via ssh. In this file you shall place the following contents:
 
 .. sourcecode:: vim
+
 	host git@github.com
 	 User git
 	 HostName github.com
