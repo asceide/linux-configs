@@ -7,7 +7,7 @@ Installing ZSH
 ================
 Installing ZSH is simple enough, if it is not already installed.
 	
-1. Check to see if the distro supports zsh by code::`cat /etc/shells` . If it does, ``bin/zsh`` should be listed.
+1. Check to see if the distro supports zsh by sourcecode:: console `cat /etc/shells` . If it does, ``bin/zsh`` should be listed.
 2. Install zsh via package manager. For example, openSUSE would use code::`sudo zypper in zsh` .
 3. Follow the wizard.
 4. Once finished, change the default shell to zsh via code::`chsh -s /bin/zsh` . Restart terminal/computer and confirm that it has changed with code::`echo $SHELL`
