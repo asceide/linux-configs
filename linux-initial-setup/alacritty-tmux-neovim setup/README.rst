@@ -144,7 +144,7 @@ In addition, add the following so you can use the alias whenever you call sudo
 
 .. sourcecode:: vim
 
-	alias sudo=`sudo `
+	alias sudo='sudo '
 
 
 
