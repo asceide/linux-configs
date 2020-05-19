@@ -140,6 +140,11 @@ I'm used to typing vim whenever I call it, so to use nvim instead of vim, put th
 		alias vim='nvim'
 	fi
 	
+In addition, add the following so you can use the alias whenever you call sudo
+
+.. sourcecode:: vim
+
+	alias sudo=`sudo `
 
 
 
