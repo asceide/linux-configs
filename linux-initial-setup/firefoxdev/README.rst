@@ -22,14 +22,14 @@ Installation
 
 .. sourcecode:: bash
 
-	sudo mkdir -p /opt/firefoxdev
-	sudo mv firefox /opt/firefoxdev
+	sudo mkdir -p /opt/firefox
+	sudo mv firefox /opt/firefox
 	
-3. Afterwards, we want to set a PATH to the binary, so place :con:`export PATH=/opt/firefoxdev:$PATH` in your ``~/.zshrc`` or shell profile.
+3. Afterwards, we want to set a PATH to the binary, so place :con:`export PATH=/opt/firefox:$PATH` in your ``~/.zshrc`` or shell profile.
 
-4. In order to ensure updates, change the ownership of /opt/firefoxdev to you via :con:`sudo chown -R $USER /opt/firefoxdev`.
+4. In order to ensure updates, change the ownership of /opt/firefoxdev to you via :con:`sudo chown -R $USER /opt/firefox`.
 
-5. Create a symlink from the binary and place it in /usr/bin via :con:`sudo ln -s /opt/firefoxdev/firefox /usr/bin`.
+5. Create a symlink from the binary and place it in /usr/bin via :con:`sudo ln -s /opt/firefox/firefox /usr/bin`.
 
 6. Afterwards, you would want to create a .desktop file so it will appear in the menu and so you can launch it. Place the following into its a text file and save it as .desktop
 
@@ -38,7 +38,7 @@ Installation
 	[Desktop Entry]
 	Name=Firefox Developer Edition
 	GenericName=Web Browser
-	Exec=/usr/bin/firefoxdev %u
+	Exec=/usr/bin/firefox %u
 	Icon=/opt/firefoxdev/firefox/browser/chrome/icons/default/default128.png
 	Terminal=false
 	Type=Application
@@ -51,11 +51,11 @@ Installation
 
 	[Desktop Action new-window]
 	Name=Open a New Window
-	Exec=/usr/bin/firefoxdev %u
+	Exec=/usr/bin/firefox %u
 
 	[Desktop Action new-private-window]
 	Name=Open a New Private Window
-	Exec=/usr/bin/firefoxdev --private-window %u
+	Exec=/usr/bin/firefox --private-window %u
 	
 7. Move the .desktop file to /usr/share/applications with :con:`sudo mv [PATH TO DESKTOP FILE] /usr/share/applications`.
 
