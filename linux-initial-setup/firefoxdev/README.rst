@@ -27,11 +27,15 @@ Installation
 	
 3. Afterwards, we want to set a PATH to the binary, so place :con:`export PATH=/opt/firefox:$PATH` in your ``~/.zshrc`` or shell profile.
 
-4. In order to ensure updates, change the ownership of /opt/firefoxdev to you via :con:`sudo chown -R $USER /opt/firefox`.
+4. In order to ensure updates, change the ownership of /opt/firefox to you via :con:`sudo chown -R $USER /opt/firefox`.
 
-5. Create a symlink from the binary and place it in /usr/bin via :con:`sudo ln -s /opt/firefox/firefox /usr/bin`.
+5. Create a symlink from the binary and place it in /usr/bin via :con:`sudo ln -s /opt/firefox/firefox /usr/bin`. This is so you can call firefox from the terminal etc.
 
-6. Afterwards, you would want to create a .desktop file so it will appear in the menu and so you can launch it. Place the following into its a text file and save it as .desktop
+6. Afterwards, you would want to create a .desktop file so it will appear in the menu and so you can launch it. Place the following into its a text file and save it as .desktop. 
+ **ALTERNATIVELY**
+ 	a. Open up firefox and let select it as the default browser when prompted.
+	b. Change the contents of the desktop file located in ``~/.local/share/applications`` to what is below
+	c. Rename the file to Firefox Developer Edition
 
 .. sourcecode:: vim
 
@@ -61,4 +65,4 @@ Installation
 	
 7. Move the .desktop file to /usr/share/applications with :con:`sudo mv [PATH TO DESKTOP FILE] /usr/share/applications`.
 
-8. Reboot and you should be done.
+8. Logout and it should be in the menu/default programs list when you relog
