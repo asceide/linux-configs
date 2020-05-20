@@ -34,6 +34,7 @@ Installation
 6. Afterwards, you would want to create a .desktop file so it will appear in the menu and so you can launch it. Place the following into its a text file and save it as .desktop
 
 .. sourcecode:: vim
+
 	[Desktop Entry]
 	Name=Firefox Developer Edition
 	GenericName=Web Browser
