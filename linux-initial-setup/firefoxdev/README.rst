@@ -34,12 +34,11 @@ Installation
 6. Afterwards, you would want to create a .desktop file so it will appear in the menu and so you can launch it. Place the following into its a text file and save it as .desktop
 
 .. sourcecode:: vim
-
 	[Desktop Entry]
 	Name=Firefox Developer Edition
 	GenericName=Web Browser
-	Exec=/usr/bin/firefox %u
-	Icon=/opt/firefoxdev/firefox/browser/chrome/icons/default/default128.png
+	Exec=/opt/firefox/firefox/firefox-bin %u
+	Icon=/opt/firefox/firefox/browser/chrome/icons/default/default128.png
 	Terminal=false
 	Type=Application
 	MimeType=text/html;text/xml;application/xhtml+xml;application/vnd.mozilla.xul+xml;text/mml;x-scheme-handler/http;x-scheme-handler/https;
@@ -49,13 +48,15 @@ Installation
 	Actions=new-window;new-private-window;
 	StartupWMClass=Firefox Developer Edition
 
+	Name[en_US]=Firefox Developer Edition
+
 	[Desktop Action new-window]
 	Name=Open a New Window
-	Exec=/usr/bin/firefox %u
+	Exec=/opt/firefox/firefox/firefox-bin %u
 
 	[Desktop Action new-private-window]
 	Name=Open a New Private Window
-	Exec=/usr/bin/firefox --private-window %u
+	Exec=/opt/firefox/firefox/firefox-bin --private-window %u
 	
 7. Move the .desktop file to /usr/share/applications with :con:`sudo mv [PATH TO DESKTOP FILE] /usr/share/applications`.
 
