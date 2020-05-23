@@ -1,4 +1,4 @@
-.. role:: code(code)
+.. role:: cond(code)
   :language: bash
 
 =======================
@@ -11,9 +11,9 @@
 
 **ZSH**
 ========================   
-* *Check to see if zsh is supported via :code:`cat /etc/shells`*
+* *Check to see if zsh is supported via :cond:`cat /etc/shells`*
 * *(If needed)* Install ZSH via package manager
-* Switch shell to zsh using :code:`chsh -s /bin/zsh`
+* Switch shell to zsh using :cond:`chsh -s /bin/zsh`
 
 **git**
 =========
