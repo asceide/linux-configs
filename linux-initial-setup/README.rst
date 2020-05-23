@@ -1,3 +1,6 @@
+.. role:: code(code)
+  :language: bash
+
 =======================
 **Linux Initial Setup**
 =======================
