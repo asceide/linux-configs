@@ -13,8 +13,8 @@ TeXLive is probably better installed from the official installer rather than fro
 
 1) Make sure that **perl** and **wget** are installed
 
-2) at CLI, use :cond:`wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
-tar -xzf install-tl-unx.tar.gz` to download the installer
+2) at CLI, use :cond:`wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz` and then 
+:cond:`tar zxf install-tl-unx.tar.gz` to download the installer
 
 3) CD to the installation folder (:cond:`cd install-tl-20200517` for example) and use :cond:`sudo ./install-tl`
 
