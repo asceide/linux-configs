@@ -35,6 +35,8 @@
 **nVidia Drivers**
 ======================
 * See specific distro information to install
+* If using mixed refresh rate monitors, add the following line to /etc/environment
+__GL_SYNC_DISPLAY_DEVICE=DP-X (X being the monitor you want the refresh rate to sync to, found via xrandr -q)
 
 **Install mailspring and snapstore**
 ========================================
