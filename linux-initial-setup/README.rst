@@ -38,9 +38,12 @@
 * If using mixed refresh rate monitors, add the following line to /etc/environment
 __GL_SYNC_DISPLAY_DEVICE=DP-X (X being the monitor you want the refresh rate to sync to, found via xrandr -q)
 
-**Install mailspring and snapstore**
+**Install mailspring**
 ========================================
-* The snapstore is needed in order to install mailspring, install both
+* Get Mailspring from the Distro
+* Install gnome-keyring and libappsecret
+* Install seahorse
+* Disable autologin at start
    
 * Unless you're happy using Thunderbird/Kmail/etc
 
