@@ -24,6 +24,14 @@ So now that you have successfully installed git, you have to start configuring i
 
 Done. But that doesn't mean you're quite able to pull, push or clone using your github account. There are two ways you can do about it: inputting your github name and password everytime you want to pull or push, or by using ssh.
 
+Next, change it so git does not track all modechanges.
+
+.. code:: bash
+
+	git config --global core.fileMode false
+	
+Lastly, don't forget to make a global gitignore file (to be cont...)
+
 Configuring ssh to use with git
 --------------------------------
 This is probably the easiest way to use git since at most you have to input your password once per session. 
