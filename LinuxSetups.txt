@@ -1,0 +1,24 @@
+install lxappearance-gtk3 (for gtk apps)
+install arandr + xrandr (to set primary display)
+install icons via AUR
+delete rofi config file in ~/.config/
+install lutris, wine, winetricks, wine-mono, wine-gecko
+install polkit-kde-agent
+Check for monospace font in case you get a weird font set, if it is set to a font you don't want, set the monospace font (or any font really), via ~/.config/fontconfig/fonts.conf and add the following:
+
+<?xml version='1.0'?>
+<!DOCTYPE fontconfig SYSTEM 'fonts.dtd'>
+<fontconfig>
+ <match target="pattern">
+  <test name="family" qual="any">
+   <string>monospace</string>
+  </test>
+  <edit binding="strong" mode="prepend" name="family">
+   <string>MY FONT HERE</string>
+  </edit>
+ </match>
+</fontconfig>
+
+
+//////
+
