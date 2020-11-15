@@ -38,17 +38,17 @@ This is probably the easiest way to use git since at most you have to input your
 
 1. Check if OpenSSH is installed. It should more than likely be already installed in your distro, but if it is not, install it via your distro's package manager.
 
-2. Generate a new private/public ssh key pair with :con:`ssh-keygen -t rsa -b 4096 -C "email@example.com"`
+2. Generate a new private/public ssh key pair with :con:`ssh-keygen -t ed25519 -C "email@example.com"`
    * When prompted, just press enter in order for it to create the ~/.ssh folder. Otherwise, changing the name of the file will cause it to save in the current directory and won't create ~/.ssh
    * Set a password always
-   * If you want a key with its own unique name, :con:`cd ~/.ssh`, run con:`ssh-keygen -t rsa -b 4096 -C "email@example.com"`, and give it it's own unique name, like asceide_rsa.
+   * If you want a key with its own unique name, :con:`cd ~/.ssh`, run con:`ssh-keygen -t ed25519 -C "email@example.com"`, and give it it's own unique name, like asceide_rsa.
 
 3. After the private/public key pair has been generated, you want to associate the key with your github account. Make sure that you have xclip or any other similar program installed
    
    a. Go to github.com and login.
    b. Go to your settings and select "SSH and GPG keys"
    c. Click on "New SSH key"
-   d. In the terminal, copy the contents of id_rsa.pub with :con:`cat ~/.ssh/id_rsa.pub | xclip -selection clip`.
+   d. In the terminal, copy the contents of id_rsa.pub with :con:`xclip -selection clipboard < ~/.ssh/id_rsa.pub`.
    e. Paste whatever was copied in the clipboard to the box in github and save.
 
 4. Now what you want to do is create a config file to use to connect via ssh. In this file you shall place the following contents:
