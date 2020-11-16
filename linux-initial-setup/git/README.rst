@@ -30,7 +30,11 @@ Next, change it so git does not track all modechanges.
 
 	git config --global core.fileMode false
 	
-Lastly, don't forget to make a global gitignore file (to be cont...)
+Lastly, you want to add a .gitignore file. Create a file with :con:`touch ~/.gitignore_global` or just include the one in here. Use the following command to use the ignore file globallu.
+
+.. sourcecode:: vim
+
+	git config --global core.excludesfile ~/.gitignore
 
 Configuring ssh to use with git
 --------------------------------
