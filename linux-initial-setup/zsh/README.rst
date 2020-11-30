@@ -3,7 +3,7 @@
 
 
 ====================================
-ZSH Installation and Configuration
+ZSH, Kitty, and VIM Installation and Configuration
 ====================================
 
 
@@ -53,3 +53,7 @@ So now that Powerline Symbols/Fonts are installed, we can now install Oh My Zsh 
 	sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 	
 Follow the wizard. You should be done afterwards. The location of the config file should be located in `~/.zshrc`
+
+Customization
+==============
+Put the Kitty and Vim/NeoVim files in ~/.config, and the .zshrc at home AFTER OMZSH is installed, then follow the installation process in https://github.com/sindresorhus/hyper-snazzy/ to set it up. Install zsh-syntax-highlighting via package manager IIRC
