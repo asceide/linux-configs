@@ -9,28 +9,24 @@
 *Installing Programmings and adjusting configurations*
 -------------------------------------------------------
 
-**ZSH**
-========================   
-* *Check to see if zsh is supported via* :cond:`cat /etc/shells`
-* *(If needed)* Install ZSH via package manager
-* Switch shell to zsh using :cond:`chsh -s /bin/zsh`
+**Razer Laptops**
+==================
+* There is a problem with Razer laptops in which the laptop will infinitely get suspended after closing the lid once. This is because the system doesn't set the fact that the lid is open. As a result add :cond:`button.lid_init_state=open` as a kernel parameter (grub etc)
+
+PopOS
+-------
+Add that parameter under options via :cond:`sudo vi /boot/efi/loader/entries/Pop_OS-current.conf`.
 
 **git**
 =========
 * *(If needed)* Install git via package manager
 * See specific folder for more information
-   
-**Firefox Developer Edition**
-=================================
-* See specific folder for information
-   
-**Alacritty, Tmux, Neovim**
-===============================
-* See specific folder for information
+
 
 **Visual Studio Code**
 =========================
-* Install vscode via package manager. If unavailable, see specific distro info.
+* Check package manager if you're not using a rpm or deb based distro.
+* With apt based package manager, download the .deb at https://code.visualstudio.com/ and run :cond:`sudo apt install */*.deb`
 
 **nVidia Drivers**
 ======================
@@ -39,14 +35,7 @@
 * If using mixed refresh rate monitors, add the following line to /etc/environment
 * __GL_SYNC_DISPLAY_DEVICE=DP-X (X being the monitor you want the refresh rate to sync to, found via xrandr -q)
 
-**Install mailspring**
-========================================
-* Get Mailspring from the Distro
-* Install gnome-keyring and libappsecret
-* Install seahorse
-* Disable autologin at start
-   
-* Unless you're happy using Thunderbird/Kmail/etc
+
 
 **Install TeXLive**
 ====================
