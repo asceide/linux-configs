@@ -55,6 +55,18 @@ Instead of zsh themes, we are going to use pure prompt for our terminal. First, 
 =========
 Install neovim if it isn't already. Place the cofiguration file in ~/.config
 
+
+**Vivid**
+==========
+Lets install vivid for better ls colors. If you're using Deb-based distros, use:
+
+..  code:: bash
+
+    wget "https://github.com/sharkdp/vivid/releases/download/v0.6.0/vivid_0.6.0_amd64.deb"
+    sudo dkpg -i vivid_0.6.0_amd64.deb
+
+to install it.
+
 **Finally**
 =============
 Place the .zshrc file in ~

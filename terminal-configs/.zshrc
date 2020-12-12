@@ -6,7 +6,6 @@ export INFOPATH=/usr/local/texlive/2020/texmf-dist/doc/info:$INFOPATH
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-fpath+=$HOME/.zsh/pure
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -60,7 +59,7 @@ ZSH_THEME="junkfood"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting) #zsh-syntax-highlighting must be last.
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions) #zsh-syntax-highlighting must be last.
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,6 +102,7 @@ autoload -Uz bracketed-paste-magic
 zle -N bracketed-paste bracketed-paste-magic
 autoload -Uz url-quote-magic
 zle -N self-insert url-quote-magic
+#Load Pure Prompt
 autoload -U promptinit; promptinit
 prompt pure
 # --- Remembering recent directories ---
@@ -121,7 +121,7 @@ prompt pure
 #setopt AUTO_PUSHD PUSHD_SILENT PUSHD_TO_HOME
 
 ### Remove duplicate entries
-#setopt PUSHD_IGNORE_DUPS
+setopt PUSHD_IGNORE_DUPS
 
 ### This reverts the +/- operators.
 #setopt PUSHD_MINUS
@@ -173,11 +173,11 @@ alias h="history"
 alias p="pwd -P"
 alias s="sudo -s"
 alias CD="cd"
-alias hc='herbstclient'
+#alias hc='herbstclient'
 alias ff='firefox'
 # Force tmux to use 256 colors
 # Either set this or TERM=xterm (or both if tmux keeps messing up?)
-#alias tmux="tmux -2"
+# alias tmux="tmux -2"
 # clock
 #alias c="while sleep 1;do tput sc;tput cup 0 $(($(tput cols)-29));date;tput rc;done &; clear"
 
@@ -188,21 +188,21 @@ alias up="sudo apt update && sudo apt upgrade"
 
 # neovim
 # alias vim="nvim" # not needed since i used update-alternatives
-alias init.vim="vim ~/.config/nvim/init.vim"
+# alias init.vim="vim ~/.config/nvim/init.vim"
 
 # Quick edit
 alias xr="vim ~/.Xresources"
-alias xrc="vim ~/.wally/Xresources-clean"
+# alias xrc="vim ~/.wally/Xresources-clean"
 alias zshrc="vim ~/.zshrc"
 alias userChrome.css="vim ~/thm/Firefox/userChrome.css"
-alias playlists="vim ~/.config/mpv/tubify_playlists"
-alias airlinevim="vim ~/.config/nvim/plugged/vim-airline/autoload/airline/themes/dark.vim"
-#alias awesomeconf="vim ~/.config/awesome/rc.lua"
-#alias subl="subl3"
+# alias playlists="vim ~/.config/mpv/tubify_playlists"
+# alias airlinevim="vim ~/.config/nvim/plugged/vim-airline/autoload/airline/themes/dark.vim"
+# alias awesomeconf="vim ~/.config/awesome/rc.lua"
+# alias subl="subl3"
 
 # nvidia optimus -> prime select 
-alias nvidia="sudo prime-select nvidia"
-alias intel="sudo prime-select intel"
+# alias nvidia="sudo prime-select nvidia"
+# alias intel="sudo prime-select intel"
 # cpu governor
 alias gameoff="sudo cpufreq-set -g powersave"
 alias gameon="sudo cpufreq-set -g performance"
@@ -211,7 +211,7 @@ alias gameon="sudo cpufreq-set -g performance"
 alias t='trans -brief'
 
 # --- even-better-ls ---  
-# LS_COLORS=$(ls_colors_generator)
+LS_COLORS=$(vivid generate snazzy)
 # run_ls() {
 #         ls-i --color=auto --group-directories-first -w $(tput cols) "$@"
 # }
