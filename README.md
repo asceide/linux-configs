@@ -21,3 +21,7 @@ If you tried and make the kernel but failed, clean the git file with git clean -
 install all the .deb files made from the kernel, usually found in the directory above the one used to install
 
 follow the stuff in the xanmod website in order to add the kernel repo.
+
+##### Pop-OS
+
+To get the GDM Screen to output on the primary monitor at start use sudo cp ~/.config/monitors.xml ~gdm/.config/
