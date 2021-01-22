@@ -6,10 +6,17 @@ Lutris: Fix pug in /usr/lib/python3.8/site-packages/lutris/sysoptions.py -> Cann
 
 Fix: change line "condition":system.LINUX_SYSTEM.is_feature_supported("GAMEMODE"), to "condition": bool(system.find_executable("gamemoded")),
 
+### Sample-rate increase DAC
+copy the pulse config file from /etc/pulse/daemon.conf to ~/.config/pulse with cp /etc/pulse/daemon.conf ~/.config/pulse
+take out the semi-colon for resample-method (set to soxr-vhq), avoid-resampling (leave as is), default-sample-format (find out if you are little or big endian), and default-sample (set to desired rate) and alternative sample rate (set to 48000). Save and kill pulse audio with pulseaudio -k
 
+
+### One Drive
 
 Install insync 3 in order to use OneDrive on linux.
 
+
+### RGB
 In order to use OpenRGB with DRAM etc, you need a patched kernel. I am using Xanmod's Linux kernel patched with OpenRGB.patch . With Aorus/Gigabyte add acpi_enforce_resources=lax as a kernel parameter.
 
 For the making of the kernel you will need dwarves, libelf-dev, bison, flex, 
