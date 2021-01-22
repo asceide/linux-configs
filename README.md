@@ -50,4 +50,8 @@ Afterwards, save and do sudo systemctl daemon-reload, sudo systemctl start *some
 
 ## Coolio Packages and Programs
 
-superpaper - to set papes for each screen individually, kind of reminds me of display fusion. Install via pip, get at https://github.com/hhannine/superpaper
+superpaper - to set papes for each screen individually, kind of reminds me of display fusion. Install via pip, get at https://github.com/hhannine/superpaper . Install the gnome extension TopIcons Plus if using superpaper with gnome (and if you unchecked the show help button)
+
+nautilus-open-any-terminal - Allows you to add an entry to the context menu in nautilus which will allow you to use another terminal within Nautilus. Install via pip, but use sudo glib-compile-schemas ~/.local/share/glib-2.0/schemas before using dconf-editor so it can appear there.
+
+jetbrains-toolbox - in /opt/, for all your ide needs.
