@@ -8,8 +8,28 @@ Fix: change line "condition":system.LINUX_SYSTEM.is_feature_supported("GAMEMODE"
 
 ### Sample-rate increase DAC
 copy the pulse config file from /etc/pulse/daemon.conf to ~/.config/pulse with cp /etc/pulse/daemon.conf ~/.config/pulse
-take out the semi-colon for resample-method (set to soxr-vhq), avoid-resampling (leave as is), default-sample-format (find out if you are little or big endian), and default-sample (set to desired rate) and alternative sample rate (set to 48000). Save and kill pulse audio with pulseaudio -k
+take out the semi-colon for resample-method (set to soxr-vhq), default-sample-format (find out if you are little or big endian) (float32le), and default-sample (set to 48000) and alternative sample rate (set to 192000). Save and kill pulse audio with pulseaudio -k
 
+
+IF your audio is skipping, 
+
+
+https://www.codeweavers.com/support/wiki/linux/faq/SoundTrouble#advancedpulse
+
+Before making this adjustment, it may be best to read about it here.
+
+With extreme caution, edit the configuration file at:
+
+/etc/pulse/default.pa
+
+look for the line that includes:
+
+load-module module-udev-detect
+
+And add tsched=0 to the end so that the above example would look like this:
+if there are other parameters in this line, do not delete them, simply add tsched=0 to the end of the line.
+
+load-module module-udev-detect tsched=0
 
 ### One Drive
 
